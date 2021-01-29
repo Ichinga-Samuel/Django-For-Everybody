@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>{% block title %}{% endblock %}</title>
+<link href="{% static "css/base.css" %}" rel="stylesheet">
+<meta name="dj4e" content="3f97b78c2ce73939fca9916a27115445">
+{#<link rel="apple-touch-icon" sizes="180x180" href="../home/static/apple-touch-icon.png">#}
+{#<link rel="icon" type="image/png" sizes="32x32" href="../home/static/favicon-32x32.png">#}
+{#<link rel="icon" type="image/png" sizes="16x16" href="../home/static/favicon-16x16.png">#}
+{#<link rel="manifest" href="../home/static/site.webmanifest">#}
+
+</head>
+<body>
+<div id="header">
+<span class="logo">Bookmarks</span>
+</div>
+<div id="content">
+{% block content %}
+{% endblock %}
+</div>
+</body>
+</html>
